@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F26A77B1EC4877200BDF271 /* flowclibasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26A77A1EC4877200BDF271 /* flowclibasicTests.swift */; };
 		40B49A581EC04BF400CC6955 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B49A571EC04BF400CC6955 /* main.m */; };
 		40B49A5B1EC04BF400CC6955 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B49A5A1EC04BF400CC6955 /* AppDelegate.m */; };
 		40B49A5E1EC04BF400CC6955 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B49A5D1EC04BF400CC6955 /* ViewController.m */; };
@@ -15,7 +16,20 @@
 		40B49A661EC04BF400CC6955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B49A641EC04BF400CC6955 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2F26A77D1EC4877200BDF271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B49A4B1EC04BF400CC6955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40B49A521EC04BF400CC6955;
+			remoteInfo = flowclibasic;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2F26A7781EC4877200BDF271 /* flowclibasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flowclibasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26A77A1EC4877200BDF271 /* flowclibasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowclibasicTests.swift; sourceTree = "<group>"; };
+		2F26A77C1EC4877200BDF271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B49A531EC04BF400CC6955 /* flowclibasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flowclibasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B49A571EC04BF400CC6955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40B49A591EC04BF400CC6955 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F26A7751EC4877200BDF271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40B49A501EC04BF400CC6955 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F26A7791EC4877200BDF271 /* flowclibasicTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F26A77A1EC4877200BDF271 /* flowclibasicTests.swift */,
+				2F26A77C1EC4877200BDF271 /* Info.plist */,
+			);
+			path = flowclibasicTests;
+			sourceTree = "<group>";
+		};
 		40B49A4A1EC04BF400CC6955 = {
 			isa = PBXGroup;
 			children = (
 				40B49A551EC04BF400CC6955 /* flowclibasic */,
+				2F26A7791EC4877200BDF271 /* flowclibasicTests */,
 				40B49A541EC04BF400CC6955 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				40B49A531EC04BF400CC6955 /* flowclibasic.app */,
+				2F26A7781EC4877200BDF271 /* flowclibasicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +114,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2F26A7771EC4877200BDF271 /* flowclibasicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F26A7811EC4877200BDF271 /* Build configuration list for PBXNativeTarget "flowclibasicTests" */;
+			buildPhases = (
+				2F26A7741EC4877200BDF271 /* Sources */,
+				2F26A7751EC4877200BDF271 /* Frameworks */,
+				2F26A7761EC4877200BDF271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F26A77E1EC4877200BDF271 /* PBXTargetDependency */,
+			);
+			name = flowclibasicTests;
+			productName = flowclibasicTests;
+			productReference = 2F26A7781EC4877200BDF271 /* flowclibasicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		40B49A521EC04BF400CC6955 /* flowclibasic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40B49A6A1EC04BF500CC6955 /* Build configuration list for PBXNativeTarget "flowclibasic" */;
@@ -105,9 +155,15 @@
 		40B49A4B1EC04BF400CC6955 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = ChengJi;
 				TargetAttributes = {
+					2F26A7771EC4877200BDF271 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = 40B49A521EC04BF400CC6955;
+					};
 					40B49A521EC04BF400CC6955 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 53GMLLVXEY;
@@ -129,11 +185,19 @@
 			projectRoot = "";
 			targets = (
 				40B49A521EC04BF400CC6955 /* flowclibasic */,
+				2F26A7771EC4877200BDF271 /* flowclibasicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F26A7761EC4877200BDF271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40B49A511EC04BF400CC6955 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +211,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F26A7741EC4877200BDF271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F26A77B1EC4877200BDF271 /* flowclibasicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40B49A4F1EC04BF400CC6955 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +230,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F26A77E1EC4877200BDF271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40B49A521EC04BF400CC6955 /* flowclibasic */;
+			targetProxy = 2F26A77D1EC4877200BDF271 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40B49A5F1EC04BF400CC6955 /* Main.storyboard */ = {
@@ -179,6 +259,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2F26A77F1EC4877200BDF271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = flowclibasicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yang.test.sample.flowclibasicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowclibasic.app/flowclibasic";
+			};
+			name = Debug;
+		};
+		2F26A7801EC4877200BDF271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = flowclibasicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yang.test.sample.flowclibasicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flowclibasic.app/flowclibasic";
+			};
+			name = Release;
+		};
 		40B49A681EC04BF400CC6955 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,20 +400,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 53GMLLVXEY;
 				INFOPLIST_FILE = flowclibasic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.atpking.flowclibasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0bdb1771-ef84-4f0d-90db-1089ec81f425";
-				PROVISIONING_PROFILE_SPECIFIER = flowclibasicdisribution;
+				PROVISIONING_PROFILE = "5c726617-5521-46bc-84ab-8b36911dc125";
+				PROVISIONING_PROFILE_SPECIFIER = flowclibasicdevelopment;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F26A7811EC4877200BDF271 /* Build configuration list for PBXNativeTarget "flowclibasicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F26A77F1EC4877200BDF271 /* Debug */,
+				2F26A7801EC4877200BDF271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		40B49A4E1EC04BF400CC6955 /* Build configuration list for PBXProject "flowclibasic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
