@@ -386,13 +386,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 53GMLLVXEY;
 				INFOPLIST_FILE = flowclibasic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.atpking.flowclibasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c726617-5521-46bc-84ab-8b36911dc125";
-				PROVISIONING_PROFILE_SPECIFIER = flowclibasicdevelopment;
+				PROVISIONING_PROFILE = "4986b45e-4527-47d2-927f-04ec8bf35604";
+				PROVISIONING_PROFILE_SPECIFIER = flowcibasic_development;
 			};
 			name = Debug;
 		};
@@ -406,8 +407,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.atpking.flowclibasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c726617-5521-46bc-84ab-8b36911dc125";
-				PROVISIONING_PROFILE_SPECIFIER = flowclibasicdevelopment;
+				PROVISIONING_PROFILE = "4986b45e-4527-47d2-927f-04ec8bf35604";
+				PROVISIONING_PROFILE_SPECIFIER = flowcibasic_development;
 			};
 			name = Release;
 		};
@@ -421,6 +422,7 @@
 				2F26A7801EC4877200BDF271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40B49A4E1EC04BF400CC6955 /* Build configuration list for PBXProject "flowclibasic" */ = {
 			isa = XCConfigurationList;
