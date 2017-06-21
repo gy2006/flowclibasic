@@ -11,5 +11,9 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UITextField *inputText;
+@property (weak, nonatomic) IBOutlet UIButton *inputButton;
+@property (weak, nonatomic) IBOutlet UISwitch *inputSwitch;
+
 @end
 

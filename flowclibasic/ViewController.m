@@ -25,5 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onInputButtonClick:(id)sender {
+    [_inputText setText: @"hello"];
+}
+
 
 @end

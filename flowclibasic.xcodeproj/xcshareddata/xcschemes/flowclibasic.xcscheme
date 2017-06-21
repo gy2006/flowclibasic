@@ -38,6 +38,16 @@
                ReferencedContainer = "container:flowclibasic.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F02747F1EFA25FA00DF3865"
+               BuildableName = "flowclibasicUITests.xctest"
+               BlueprintName = "flowclibasicUITests"
+               ReferencedContainer = "container:flowclibasic.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
