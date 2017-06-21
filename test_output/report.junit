@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='flowclibasicTests.xctest' tests='4' failures='1'>
+  <testsuite name='flowclibasicTests.flowclibasicTests' tests='4' failures='1'>
+    <testcase classname='flowclibasicTests.flowclibasicTests' name='testExample' time='0.007'/>
+    <testcase classname='flowclibasicTests.flowclibasicTests' name='testPerformanceExample' time='0.257'/>
+    <testcase classname='flowclibasicTests.flowclibasicTests' name='testShouldFail'>
+      <failure message='XCTAssertEqual failed: (&quot;hello&quot;) is not equal to (&quot;1&quot;) - '>flowclibasicTests/flowclibasicTests.swift:32</failure>
+    </testcase>
+    <testcase classname='flowclibasicTests.flowclibasicTests' name='testStringEqual' time='0.001'/>
+  </testsuite>
+</testsuites>
