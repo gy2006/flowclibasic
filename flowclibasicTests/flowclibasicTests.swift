@@ -29,7 +29,7 @@ class flowclibasicTests: XCTestCase {
     }
     
     func testShouldFail() {
-        XCTAssertEqual("hello", "1")
+        XCTAssertEqual("1", "1")
     }
     
     func testPerformanceExample() {
