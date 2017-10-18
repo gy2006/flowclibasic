@@ -17,8 +17,7 @@
 flow:
   - envs:
      IOS_PROJECT_NAME: "flowcidemo"
-     IOS_SCHEME: "newscheme"
-     IOS_CONFIGURATION: "Release"
+     IOS_SCHEME: "flowclibasic"
      IOS_EXPORT_METHOD: "development"
      IOS_OUTPUT_DIR: "./ipa_dir"
      
@@ -31,7 +30,7 @@ flow:
       - name: Build
         script: |
           cd ${IOS_PROJECT_NAME}
-          fastlane gym --scheme ${IOS_SCHEME} --configuration ${IOS_CONFIGURATION} --export_method ${IOS_EXPORT_METHOD} --output_directory ${IOS_OUTPUT_DIR}
+          fastlane gym --scheme ${IOS_SCHEME} --export_method ${IOS_EXPORT_METHOD} --output_directory ${IOS_OUTPUT_DIR}
       
       - name: Get IPA
         script: |
