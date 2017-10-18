@@ -14,7 +14,7 @@
 #     - IOS_OUTPUT_DIR
 
  
-flows:
+flow:
   - envs:
      IOS_PROJECT_NAME: "flowcidemo"
      IOS_SCHEME: "newscheme"
@@ -24,17 +24,17 @@ flows:
      
     steps:
       - name: Git Clone
-        scripts: |
+        script: |
           rm -r ${IOS_PROJECT_NAME}
           git clone ${FLOW_GIT_URL} ${IOS_PROJECT_NAME}
       
       - name: Build
-        scripts: |
+        script: |
           cd ${IOS_PROJECT_NAME}
           fastlane gym --scheme ${IOS_SCHEME} --configuration ${IOS_CONFIGURATION} --export_method ${IOS_EXPORT_METHOD} --output_directory ${IOS_OUTPUT_DIR}
       
       - name: Get IPA
-        scripts: |
+        script: |
           cd ${IOS_PROJECT_NAME}
           array=$(find ${IOS_OUTPUT_DIR} -o -name *.ipa 2>&1)
           for file in ${array[@]}
