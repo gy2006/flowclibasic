@@ -25,7 +25,7 @@ flow:
     steps:
       - name: Git Clone
         script: |
-          rm -r ${IOS_PROJECT_NAME}
+          rm -r -f ${IOS_PROJECT_NAME}
           git clone ${FLOW_GIT_URL} ${IOS_PROJECT_NAME}
       
       - name: Build
