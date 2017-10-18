@@ -28,12 +28,12 @@ flow:
      IOS_IPA_DIR: "./ipa_dir"
      
     steps:
-      - name: Git Clone
+      - name: GitClone
         script: |
           rm -r -f ${IOS_PROJECT_NAME}
           git clone ${FLOW_GIT_URL} ${IOS_PROJECT_NAME}
 
-      - name: Pod_Install
+      - name: PodInstall
         script: |
           cd ${IOS_PROJECT_NAME}
           pod install || true
@@ -43,7 +43,7 @@ flow:
           cd ${IOS_PROJECT_NAME}
           fastlane gym --scheme ${IOS_SCHEME} --export_method ${IOS_EXPORT_METHOD} --output_directory ${IOS_IPA_DIR}
       
-      - name: Get_IPA
+      - name: GetIPA
         script: |
           cd ${IOS_PROJECT_NAME}
           array=$(find ${IOS_IPA_DIR} -name *.ipa 2>&1)
