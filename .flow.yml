@@ -8,10 +8,10 @@
 #     - IOS_PROJECT_NAME
 #
 #   - Setup iOS build parameter:
-#     - IOS_SCHEME
-#     - IOS_CONFIGURATION
-#     - IOS_EXPORT_METHOD 
-#     - IOS_OUTPUT_DIR
+#     - IOS_SCHEME:
+#     - IOS_CONFIGURATION:
+#     - IOS_EXPORT_METHOD: app-store, ad-hoc, package, enterprise, development, developer-id
+#     - IOS_OUTPUT_DIR:
 
  
 flow:
@@ -35,7 +35,7 @@ flow:
       - name: Get IPA
         script: |
           cd ${IOS_PROJECT_NAME}
-          array=$(find ${IOS_OUTPUT_DIR} -o -name *.ipa 2>&1)
+          array=$(find ${IOS_OUTPUT_DIR} -name *.ipa 2>&1)
           for file in ${array[@]}
           do
             echo $file 
